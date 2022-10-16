@@ -1,0 +1,62 @@
+test encoder lan 1:
+ input: 10000 pulse
+ ouput: 23614
+ 
+ 
+ 1 vòng sấp xỉ 40000 xung
+ với 40k xung/vòng sau 181 xung, intsant stop sẽ dừng
+ 
+ 42000 							8,2
+ 28000 xung bắn trong  5,4s
+ 14000 xung bắn trong  2,5s
+ 7000							1,17
+ 
+ 
+ 
+ 
+ ----test 10/1/22
+ 
+										Quá trình                                                                         Kết quả
+ Đầu tiên xuất hiện lỗi 480 (lỗi encoder trả về của động cơ)                                         Lỗi do động cơ
+ test trên vít me                                                                                                         ổn
+ test chạy liên tục theo chiều âm:                                                                               ổn       Tốc độ: 10000 
+ test chạy liên tục theo chiều dương:                                                                           ổn       Tốc độ: 10000 
+ test thay đổi tốc độ                                                                                                   ổn                    10000 - 50000
+ Test thay đổi chiều trong quá trình chạy                                                                     Giữa các lần đổi chiều phải cho dừng khoảng 100us
+ 
+ Test hàm tăng, giảm tốc độ                                                                                       test bằng hàm đặt tốc độ, 
+ Test timer
+ 
+ 
+							Kiểm tra chức năng home search
+
+	Test lại chạy thử step 1 không: REG6=1, 
+
+ 
+ 
+						   Test thử 15/10
+						   
+	1. Test thử set cmd
+Test thử hàm SET_CMD_AXIS                                CHẠY ĐƯỢC
+Test hàm SET_CMD                                               CHẠY ĐƯỢC
+test hàm set_dir                                                    CHẠY ĐƯỢC
+test hàm stop                                                        CHẠY ĐƯỢC
+test hàm change_dir                                               CHẠY ĐƯỢC
+
+	2. Test các trục                               X                                  Y                                     Z                                 U
+Test hướng
+Test thay đổi tốc độ
+Test home search
+Test fix pulse driving
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
